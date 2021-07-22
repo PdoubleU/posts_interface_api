@@ -1,7 +1,9 @@
-// @vue/component
+import PostBox from './PostBox'
+
 export default {
   name: 'PostsContainer',
   components: {
+    PostBox
   },
   data () {
 

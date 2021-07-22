@@ -1,2 +1,17 @@
-
+.posts-container
+    box-sizing: border-box
+    display: grid
+    grid-template-columns: 1fr
+    grid-auto-rows: min-content
+    min-width: 100vw
+    min-height: 100vh
+    color: $text-color-alt
+    text-align: left
+    padding: 1rem .6rem
+    & :first-child
+        margin-top: 15%
+    & * + *
+        margin-top: 1rem
+    & :last-child
+        margin-bottom: 10%
 

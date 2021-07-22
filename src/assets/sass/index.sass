@@ -1,4 +1,4 @@
-@import './__variables.sass'
+@import '__variables'
 
 html
     box-sizing: border-box
@@ -16,9 +16,10 @@ body
     box-sizing: inherit
     text-align: center
     position: relative
-    color: $main-color
-    background: rgb(89,160,175)
-    background: radial-gradient(circle, rgba(89,160,175,1) 0%, rgba(0,0,0,1) 89%, rgba(2,0,36,1) 100%)
+    color: $text-color
+    background: $gradient01
+    background: linear-gradient(-215deg, $gradient01 0%, $gradient02 100%)
     min-height: 100vh
+    width: 100vw
     padding: 0
     margin: 0

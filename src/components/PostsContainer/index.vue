@@ -1,7 +1,16 @@
 <template>
-  <div>
-
-  </div>
+  <span class="posts-container">
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+    <PostBox></PostBox>
+  </span>
 </template>
 
 <script src="./component.js" />
