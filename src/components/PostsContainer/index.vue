@@ -1,16 +1,9 @@
 <template>
-  <span class="posts-container">
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-    <PostBox></PostBox>
-  </span>
+  <div class="posts-container">
+    <div v-bind:key="post.id" v-for="post in allPosts">
+      <PostBox v-bind:post='post'></PostBox>
+    </div>
+  </div>
 </template>
 
 <script src="./component.js" />
