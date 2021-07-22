@@ -1,5 +1,5 @@
 // @vue/component
 export default {
-  name: 'Table',
+  name: 'PostBox',
   props: ['planets', 'loading', 'error', 'isMobile']
 }

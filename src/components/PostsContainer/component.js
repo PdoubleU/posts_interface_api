@@ -1,21 +1,18 @@
 // @vue/component
 export default {
-  name: 'WelcomePage',
+  name: 'PostsContainer',
   components: {
-
   },
   data () {
-    return {
-      isLoading: true
-    }
+
   },
   methods: {
 
   },
-  mounted () {
+  created () {
 
   },
-  beforeDestroy () {
+  mounted () {
 
   }
 }
