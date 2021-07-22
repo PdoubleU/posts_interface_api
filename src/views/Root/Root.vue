@@ -1,5 +1,5 @@
 <template>
-  <div></div>
+  <Wrapper></Wrapper>
 </template>
 
 <script src="./component.js"></script>

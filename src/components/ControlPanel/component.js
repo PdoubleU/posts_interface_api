@@ -1,6 +1,6 @@
-// @vue/component
+
 export default {
-  name: 'WelcomePage',
+  name: 'Wrapper',
   components: {
 
   },
