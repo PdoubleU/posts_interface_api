@@ -1,8 +1,9 @@
+import Dropdown from '../Dropdown'
 
 export default {
   name: 'Wrapper',
   components: {
-
+    Dropdown
   },
   data () {
     return {

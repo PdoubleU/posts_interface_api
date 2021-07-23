@@ -16,6 +16,7 @@
     "jw-vue-pagination": "^1.0.3",
     "vue": "^2.6.11",
     "vue-axios": "^3.2.4",
+    "vue-dynamic-dropdown": "^1.0.12",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
