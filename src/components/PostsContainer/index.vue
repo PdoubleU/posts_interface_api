@@ -1,8 +1,10 @@
 <template>
   <div class="posts-container">
-    <div v-bind:key="post.id" v-for="post in pageOfPosts">
-      <PostBox v-bind:post='post'></PostBox>
-    </div>
+    <ul class="posts-list">
+      <li class='post-element' v-bind:key="post.id" v-for="post in pageOfPosts">
+        <PostBox v-bind:post='post'></PostBox>
+      </li>
+    </ul>
     <div class="pagination-container">
       <jw-pagination :items='allPosts' @changePage='onChangePage' :disableDefaultStyles='true' :maxPages='3' :labels='customLabels'></jw-pagination>
     </div>
