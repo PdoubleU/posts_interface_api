@@ -23,9 +23,11 @@ export default {
             value: byTitleAsc
           }
         ],
-        placeholder: 'Sort...',
-        borderRadius: '1em',
-        width: 150
+        backgroundColor: '#ffe7f3',
+        backgroundExpandedColor: '#ff9790',
+        hoverBackgroundColor: '#0084d4',
+        textColor: '#ff3785',
+        placeholder: 'Sort...'
       }
     }
   },

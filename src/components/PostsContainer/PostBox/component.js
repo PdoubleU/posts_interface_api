@@ -11,6 +11,7 @@ export default {
     return {
       faIcon: ['fas', 'trash-alt'],
       isReadMoreActive: false,
+      isRemoved: false,
       postId: this.post.id
     }
   },
@@ -20,7 +21,8 @@ export default {
       this.isReadMoreActive = !this.isReadMoreActive
     },
     removeThisPost () {
-      this.removePost(this.postId)
+      setTimeout(() => this.removePost(this.postId), 3000)
+      this.isRemoved = true
     }
   }
 }

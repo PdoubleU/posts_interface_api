@@ -6,5 +6,21 @@
     background: $main-color
     border-radius: .6rem
     padding: .8rem 1rem
+    box-shadow: 1px 1px 3px $main-shadow
     & > h4
         width: 80%
+        text-transform: uppercase
+    & > .name
+        font-style: italic
+    & > .name::before
+        content: ''
+        display: inline-block
+        width: .1rem
+        height: 1rem
+        margin-right: 1.2rem
+        background-color: $text-color-alt
+    & > .read-more
+        font-size: .8rem
+
+.post-element.removed
+    display: none

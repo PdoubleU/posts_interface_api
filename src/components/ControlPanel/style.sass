@@ -7,8 +7,49 @@
     flex-direction: row
     justify-content: space-between
     width: 100%
+    height: 3rem
+    @media (min-width: 1020px)
+        width: 11rem
+        height: 100%
+        flex-direction: column-reverse
+        justify-content: flex-end
+        align-items: flex-start
     padding: .6rem
     background: $main-color
+    color: $text-color-alt
+    box-shadow: 1px 1px 3px $main-shadow
+    & > span
+        position: absolute
+        @media (min-width: 1020px)
+            position: relative
+            width: 9rem
+            top: 0
+            right: 0
+            margin: 3rem 0
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        right: 1rem
+        top: 1.5rem
+        box-shadow: 1px 1px 2px $main-shadow
+        background: $main-color
+        height: 2rem
+        width: 9rem
+        @media (min-width: 720px)
+            width: 9rem
+        border-radius: 1rem
+        & > input
+            border: none
+            border-bottom: 1px solid $gradient01
+            width: 60%
+            text-align: center
+            color: $text-color-alt
+            font-size: .9rem
+            &::placeholder
+                color: $gradient01
+        & > svg
+            pointer-events: none
+            margin-right: .5rem
 
 .search-input
     align-self: center

@@ -1,7 +1,7 @@
 <template>
   <div class="posts-container">
     <ul class="posts-list">
-      <li class='post-element' v-bind:key="post.id" v-for="post in pageOfPosts">
+      <li v-bind:key="post.id" v-for="post in pageOfPosts">
         <PostBox v-bind:post='post'></PostBox>
       </li>
     </ul>
