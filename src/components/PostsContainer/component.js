@@ -20,7 +20,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['fetchPosts']),
+    ...mapActions(['fetchPosts', 'fetchAuthors']),
     onChangePage (pageOfPosts) {
       this.pageOfPosts = pageOfPosts
     }
@@ -28,5 +28,6 @@ export default {
   computed: mapGetters(['allPosts']),
   created () {
     this.fetchPosts()
+    this.fetchAuthors()
   }
 }
