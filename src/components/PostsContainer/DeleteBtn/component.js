@@ -1,5 +1,10 @@
 // @vue/component
 export default {
   name: 'DeleteBtn',
-  props: ['faIcon']
+  props: ['faIcon'],
+  methods: {
+    removeThisPost () {
+      this.$emit('remove')
+    }
+  }
 }

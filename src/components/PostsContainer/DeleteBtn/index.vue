@@ -1,5 +1,5 @@
 <template>
-   <button class="button-delete">
+   <button class="button-delete" @click='removeThisPost'>
       <font-awesome-icon :icon="faIcon" />
    </button>
 </template>

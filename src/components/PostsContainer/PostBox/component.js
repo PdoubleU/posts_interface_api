@@ -9,13 +9,18 @@ export default {
   },
   data () {
     return {
-      faIcon: ['fas', 'trash-alt']
+      faIcon: ['fas', 'trash-alt'],
+      isReadMoreActive: false,
+      postId: this.post.id
     }
   },
   methods: {
-    ...mapActions(['removePost'])
-  },
-  deletePost () {
-    this.removePost(this.Post)
+    ...mapActions(['removePost']),
+    toggleReadMoreActive () {
+      this.isReadMoreActive = !this.isReadMoreActive
+    },
+    removeThisPost () {
+      this.removePost(this.postId)
+    }
   }
 }
