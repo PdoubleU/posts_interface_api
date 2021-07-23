@@ -26,5 +26,15 @@
     list-style: none
     display: flex
     flex-direction: row
+    justify-content: center
     max-width: 90vw
+    & > li + li
+        margin-left: .5rem
+    & > li
+        cursor: pointer
+        width: 1.1rem
+        height: 1.1rem
+        border: 1px $main-color solid
+        & > a
+            padding: .2rem
 

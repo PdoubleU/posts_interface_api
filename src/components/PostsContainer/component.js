@@ -20,14 +20,13 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['fetchPosts', 'fetchAuthors']),
+    ...mapActions(['fetchData']),
     onChangePage (pageOfPosts) {
       this.pageOfPosts = pageOfPosts
     }
   },
   computed: mapGetters(['allPosts']),
   created () {
-    this.fetchPosts()
-    this.fetchAuthors()
+    this.fetchData()
   }
 }
