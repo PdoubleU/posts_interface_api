@@ -1,3 +1,4 @@
+import { mapGetters, mapActions } from 'vuex'
 import PostBox from './PostBox'
 
 export default {
@@ -5,16 +6,11 @@ export default {
   components: {
     PostBox
   },
-  data () {
-
-  },
   methods: {
-
+    ...mapActions(['fetchPosts'])
   },
+  computed: mapGetters(['allPosts']),
   created () {
-
-  },
-  mounted () {
-
+    this.fetchPosts()
   }
 }

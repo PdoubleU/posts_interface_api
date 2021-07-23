@@ -1,5 +1,12 @@
-// @vue/component
+import { mapActions } from 'vuex'
+
 export default {
   name: 'PostBox',
-  props: ['planets', 'loading', 'error', 'isMobile']
+  props: ['post'],
+  methods: {
+    ...mapActions(['removePost'])
+  },
+  deletePost () {
+    this.removePost(this.Post)
+  }
 }
