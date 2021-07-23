@@ -1,22 +1,20 @@
 import Dropdown from '../Dropdown'
+import { mapActions } from 'vuex'
 
 export default {
-  name: 'Wrapper',
+  name: 'ControlPanel',
   components: {
     Dropdown
   },
   data () {
     return {
-      isLoading: true
+      search: ''
     }
   },
   methods: {
-
-  },
-  mounted () {
-
-  },
-  beforeDestroy () {
-
+    ...mapActions(['searchPosts']),
+    onChange () {
+      this.searchPosts(this.search)
+    }
   }
 }
