@@ -2,7 +2,7 @@
    <div class="post-element">
       <h4>{{post.title}}</h4>
       <p>{{post.body}}</p>
-      <p>AutohrID{{post.userId}}</p>
+      <p>{{post.name}}</p>
       <DeleteBtn :faIcon='faIcon'></DeleteBtn>
    </div>
 </template>
