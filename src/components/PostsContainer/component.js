@@ -1,5 +1,6 @@
 import { mapGetters, mapActions } from 'vuex'
 import PostBox from './PostBox'
+import Loading from '../Loading'
 
 const customLabels = {
   first: '<<',
@@ -11,12 +12,15 @@ const customLabels = {
 export default {
   name: 'PostsContainer',
   components: {
-    PostBox
+    PostBox,
+    Loading
   },
   data () {
     return {
       pageOfPosts: [],
-      customLabels
+      customLabels,
+      isLoading: true,
+      isError: false
     }
   },
   methods: {
@@ -26,7 +30,13 @@ export default {
     }
   },
   computed: mapGetters(['allPosts']),
-  created () {
-    this.fetchData()
+  async mounted () {
+    try {
+      await this.fetchData()
+      this.isLoading = false
+    } catch {
+      this.isLoading = false
+      this.isError = true
+    }
   }
 }
