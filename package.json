@@ -2,12 +2,12 @@
   "name": "posts_interface_api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pdoubleu.github.io/posts_interface_api",
+  "homepage": "https://github.com/PdoubleU/posts_interface_api",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d dist"
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
