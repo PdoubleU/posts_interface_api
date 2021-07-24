@@ -26,7 +26,6 @@ const actions = {
     const fetchedPosts = await axios.get(posts_uri)
     const fetchedUsers = await axios.get(users_uri)
     commit('unifyData', [fetchedPosts.data, fetchedUsers.data])
-    console.log(state.posts)
   },
   async removePost ({ commit }, post) {
     const response = await axios.delete(`${posts_uri}$
@@ -63,7 +62,7 @@ const mutations = {
         state.posts = state.posts.sort((a, b) => sortTitleAsc(a, b))
         break
       default:
-        console.log('No sorting method was executed. Check the parameters of switch statement.')
+        console.warn('No sorting method was executed. Check the parameters of switch statement.')
         break
     }
   },

@@ -1,5 +1,10 @@
 # posts_interface_api
 
+## Live preview
+
+[Click and try!](https://pdoubleu.github.io/posts_interface_api/)
+
+
 ## Project setup
 ```
 npm install

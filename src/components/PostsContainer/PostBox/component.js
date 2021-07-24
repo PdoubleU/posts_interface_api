@@ -21,7 +21,7 @@ export default {
       this.isReadMoreActive = !this.isReadMoreActive
     },
     removeThisPost () {
-      setTimeout(() => this.removePost(this.postId), 3000)
+      setTimeout(() => { this.removePost(this.postId); alert('timeout') }, 3000)
       this.isRemoved = true
     }
   }
