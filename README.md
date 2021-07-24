@@ -1,4 +1,4 @@
-# posts_interface_api
+# An front end interface to present data fetched from remote API
 
 ## Project setup
 ```
