@@ -22,7 +22,7 @@ export default {
     },
     removeThisPost () {
       this.isRemoved = true
-      setTimeout(() => this.removePost(this.postId), 2000)
+      setTimeout(() => this.removePost(this.postId), 1500)
     }
   }
 }
